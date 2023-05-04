@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import PasswordField from "./PasswordField";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>A useId hook demo!</h1>
+      {/* Now, even if PasswordField appears multiple times on the screen, the generated IDs won’t clash. */}
+      <PasswordField />
+      <PasswordField />
+      <PasswordField />
     </div>
   );
 }
